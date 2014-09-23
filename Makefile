@@ -1,5 +1,3 @@
-NAME=FM_CV
-
 all: FM_CV.pdf
 
 FM_CV.pdf: FM_CV.tex
