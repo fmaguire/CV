@@ -1,0 +1,280 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{Finlay_Maguire_CV}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Finlay}{Maguire}{ \urlstyle{same}\href{http://finlaymagui.re}{finlaymagui.re} | \href{http://github.com/fmaguire}{github/fmaguire}\\
+\href{mailto:finlaymaguire@gmail.com}{finlaymaguire@gmail.com} | +1-782-234-3927
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University College }
+\runsubsection{London}\\
+\descript{PhD Bioinformatics}
+\location{Dec 2015 | London, England}
+Thesis: A multi-omic analysis of the photosynthetic endosymbioses of \textit{Paramecium bursaria} \\
+Defended: March 2016 \\
+\sectionsep
+
+\subsection{Oxford University}
+\descript{MA (hons) Natural Science (Biological Sciences)}
+\location{May 2011 | Oxford, England}
+Dissertation: Evolution of the eukaryotic folate biosynthesis pathway\\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \vspace{-0.3cm}
+\section{Courses}
+\subsection{Taught}
+Data Management\\
+Bioinformatics Algorithms\\
+Python and Advanced Python\\
+Machine Learning for Life Sciences\\
+Genomics and Transcriptomics\\
+Unix and Perl\\
+Image Processing with Python\\
+Software Carpentry Bootcamp\\
+Supervision of Masters and \\ Undergraduate Researchers\\
+\sectionsep
+
+\subsection{Attended}
+International Course on Antibiotic Resistance 2017 \\
+Gaussian Processes for Global Optimisation 2015\\
+Gaussian Process Summer School 2015\\
+EMBO YIP PhD Course 2013\\
+Woods Hole Molecular Evolution Workshop 2012\\
+MOOCs in Machine Learning, Linear Algebra, 
+Logic, Statistics, Data Analysis, Automata Theory\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+%\location{Over 5000 lines:}
+    \textit{\location{Expert:}}
+    Python \textbullet{} Bash \textbullet{}  \LaTeX\ \textbullet{} Unix\\
+    \textit{\location{Intermediate:}}
+    C++ \textbullet{} R \textbullet{} perl \textbullet{} SQL \textbullet{} HPC Systems\\
+    \textit{\location{Familiarity:}}
+    Octave/Matlab \textbullet{} JS (inc. D3.js) \textbullet{} Go\\
+%\location{Over 1000 lines:}
+%R \textbullet{}
+%C++ \textbullet{} matlab/octave \textbullet{} perl \textbullet{} CSS \textbullet{} AWK \textbullet{} SQL  \\
+%\location{Familiar:}
+%Verilog \textbullet{} Javascript (inc. D3.js) \textbullet{} Go
+%\textbullet{} HPC Linux Sysadmin \\
+\sectionsep
+\subsection{Molecular Biology}
+\{transcript,gen,metabol\}-omics \textbullet{} phylogenetics \textbullet{} 
+microscopy \textbullet{} \\ standard microbiology lab techniques 
+%jnucleic acid extraction \textbullet{} culturing \textbullet{}
+%cloning \textbullet{} microscopy \\
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+%\runsubsection{University of Exeter}
+%\descript{| Postdoctoral Fellow}
+%\location{March 2016 - Present | Exeter, England}
+%\sectionsep
+%\begin{tightemize}
+%\item Analysing and simulating the evolution of protein transmembrane domains using deep recurrent neural networks
+%\item Automation of \textit{de novo} assembly hyperparameter selection via Bayesian optimisation
+%\item Evaluation of experimental induction and function of RNAi in a novel model organism.
+%\end{tightemize}
+
+\runsubsection{Dalhousie University}
+\descript{| Postdoctoral Fellow}
+\location{February 2017 - Present | Halifax, Nova Scotia}
+\sectionsep
+\begin{tightemize}
+\item Lead project developing prediction tools for antimicrobial resistance from metagenomes with the Public Health Agency of Canada and Agriculture and Agri-Food Canada.
+%\item Applied novel Bayesian optimisation methods to the problem of genome assembly.
+\item Assisted procurement and testing of an IBM machine learning HPC environment.
+\item Lectured and mentored graduate computer science students.
+\end{tightemize}
+
+\runsubsection{Neuroglycerin}
+\descript{| Technical Co-founder}
+\location{Aug 2014 – Present | Edinburgh, Scotland}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Co-founded and ran a 6-person competitive Machine Learning Team.
+\item Top 5\% finishes in two major international competitions.
+\item Developed solutions collaboratively using standard software development methods (VCS, TDD).
+\item Submissions include deep convolutional neural networks, model combining strategies, classical methods, computer vision, feature engineering approaches all used extensively in various competitions.
+\end{tightemize}
+    \vspace{-0.3cm}
+
+\sectionsep
+\runsubsection{NASA}
+\descript{| Planetary Biology Fellow}
+\location{July 2013 – Aug 2013 | Kennedy Space Center, Florida}
+\begin{tightemize}
+\item Acted as NASA representative and scientific adviser to BBC ``Cloud Lab'' Documentary.
+\item Researched bacterial adaptations to extreme near-space conditions.
+\item Designed and implemented trials for a stratospheric balloon flight.
+\item Work resulted in a publication and journal front cover image.
+\end{tightemize}
+\sectionsep
+    \vspace{-0.3cm}
+\runsubsection{BioMAP Egypt}
+\descript{| Research Assistant}
+\location{July 2008 – Aug 2013 | Sinai, Egypt}
+\begin{tightemize}
+\item GIS project monitoring biodiversity in the Sinai Desert.
+\item Sampled and performed preliminary data analysis in isolated and challenging conditions.
+\end{tightemize}
+\sectionsep
+    \vspace{-0.3cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Conferences 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conferences}
+
+\subsection{Invited Talks}
+    International Course on Antibiotic Resistance 2017 \textbullet{}
+    Canadian Institute for Advanced Research IMB Meeting 2016 \textbullet{}
+    Introduction to Machine Learning for Life Sciences Workshop 2015 \textbullet{}
+EMBO YIP Meeting 2013\\
+\vspace{0.1cm}
+\subsection{Posters}
+School of Informatics Jamboree 2015 \textbullet{} 
+    EMBO: Comparative Genomics of Eukaryotic Microorganisms 2011 \& 2013 \textbullet{}
+    National Association for Research in Science Teaching 2012 \textbullet{}
+    Young Systematists Forum 2011 \textbullet{} SGM Summer Conference 2011 \\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Awards
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\vspace{-0.5cm}
+
+\section{Awards} 
+\begin{tabular}{rll}
+2017         & University  & Department Conference Prize \\
+2015	     & University  & Informatics Jamboree Prize \\
+2015         & 57\textsuperscript{th}/1049 & National Data Science Bowl\\
+2014         & 16\textsuperscript{th}/527 & American Epilepsy Society Seizure Prediction Challenge \\
+2013	     & Global & NASA Planetary Biology Fellowship \\
+2013	     & Global & Earth and Space Foundation Exploration Award\\
+2010     & National & SGM Harry Smith Vacation Studentship\\
+2009     & University & Dukinfield Exhibition in Biological Sciences\\
+\end{tabular}
+%Additionally, several meeting grants including FEMS Young Scientist Meeting Grants in 2013 and 2011, 
+%and an SGM Meeting Grant in 2011.
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications} 
+%\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+%\bibliographystyle{abbrv}
+%\bibliography{publications}
+%\nocite{*}
+8 publications including Proceedings of the National Academy of Sciences, Royal Society B, and Current Biology.
+See \url{goo.gl/04fiwt} for full citation list.
+
+\end{minipage}
+\end{document}  \documentclass[]{article}

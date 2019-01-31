@@ -1,0 +1,318 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com). a
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                     
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Finlay}{Maguire}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{1058 Tower Road, Apartment 4, Halifax, Nova Scotia, B3H 2Y5}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1 782-234-3927}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{finlaymaguire@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{finlaymagui.re}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+  \vspace{-120pt}
+  \makecvtitle
+
+\section{Education}
+
+\cventry{October 2011 - July 2016}{Bioinformatics}{Doctor of Philosophy}{University College London}{}{\vspace{3pt}Title: A Multi-omic Analysis of the Photosynthetic Endosymbioses of \textit{Paramecium bursaria}\\
+Supervisor: Thomas A. Richards\\
+A reconstruction of cellular interactions in a nascent endosymbiotic system through novel application of 
+machine learning and computational methods to analyse ‘single’ cell metagenomic, metabolomic, and metatranscriptomic datasets. 
+It involved the first use of these datasets in the study of non-model multi-eukaryote systems.}
+
+% The thesis was examined (and upgraded) by Professor Saul Purton (Professor of Algal Biotechnology, UCL),
+% Professor Andrew Roger (Professor of Biochemistry and Molecular Evolution, Dalhousie) and Professor Nick
+% Lane (Professor of Evolutionary Biochemistry, UCL).
+
+\cventry{October 2008--June 2011}{Natural Sciences - Biological Sciences}{Master of Arts}{University of Oxford}{ Honours (2i)}{\vspace{3pt}Title: The Evolution of the Folate Biosynthesis Gene Fusions in the Eukaryotes.\\
+Supervisor: Thomas A. Richards\\
+Conducted an independent  bioinformatics honours research project to polarise deep-branching relationships within the evolutionary tree of life.}
+
+    
+
+\section{Honours and Awards}
+\cventry{September 2018}{Travel Award (\$500)}{American Society of Microbiology}{Washington, DC}{}{}
+\cventry{June 2018}{Travel Award (\$500)}{Canadian Society of Microbiology}{University of Manitoba}{}{}
+\cventry{January 2018}{Best Presentation (\$50)}{Dalhousie Computer Science In-House Conference}{Dalhousie University}{}{}
+\cventry{March 2015}{Poster Prize (£50)}{School of Informatics Jamboree}{University of Edinburgh}{}{}
+\cventry{December 2014--March 2015}{Top \(\sim\)5\% (57/1049)}{National Data Science Bowl}{Neuroglycerin}{}{}
+\cventry{August--October 2014}{ Top 5\% (16/527)}{American Epilepsy Society Seizure Prediction Challenge}{Neurogylcerin}{}{}
+\cventry{October 2013}{Meeting Scholarship (£350)}{FEMS Young Scientist Grant}{Sant Feliu du Guixols, Spain}{}{}
+\cventry{July--October 2013}{10-Week Research Fellowship (£3500)}{NASA Planetary Biology Program}{John F. Kennedy Space Center}{}{}
+\cventry{July--October 2013}{Research Scholarship (£300)}{Earth and Space Foundation}{John F. Kennedy Space Center}{}{}
+\cventry{October 2011}{Meeting Scholarship (£350)}{FEMS Young Scientist Grant}{Sant Feliu du Guixols, Spain}{}{}
+\cventry{October 2011--December 2016}{UCL-NHM PhD Studentship (£70,000)}{4-Year Joint Institution PhD Studentship}{University College London}{}{}
+\cventry{September 2011}{Travel Award (£170)}{Society for General Microbiology Undergraduate Grant}{University of York}{}{}
+\cventry{October 2009--July 2011}{Scholarship for Academic Excellence (£300)}{Dukinfield Exhibition in Biological Sciences}{University of Oxford}{}{}
+\cventry{June--August 2010}{8-Week Research Scholarship (£1890)}{Society for General Microbiology Harry Smith Studentship}{University of Exeter}{}{}
+
+% \section{Research and Teaching Interests}
+% AAASASASASAS
+
+\section{Experience}
+\subsection{Research Experience}
+\cventry{February 2017--Present}{Faculty of Computer Science}{Postdoctoral Fellow}{Dalhousie University}{}{
+Supervisor: Robert G. Beiko\\Leading the development of the AMRtime project, a machine learning based antimicrobial resistance prediction tool for metagenomic datasets. 
+Responsibilities include co-ordination of a project involving 3 universities and several national public health and agrifood stakeholders.}
+
+\cventry{October 2016--January 2017}{Living Systems Institute}{Associate Research Fellow}{University of Exeter}{}{Supervisor: Thomas A. Richards\\Projects performed included 
+experimental induction of RNAi in \textit{P. bursaria}, automation of genome assembly using Bayesian optimisation, and 
+analysis of protein transmembrane domain evolution with deep recurrent neural networks.}
+
+\cventry{August 2014--March 2016}{Neurogylcerin}{Competitive Machine Learning Team}{University of Edinburgh}{}{\begin{itemize}
+    \item National Data Science Bowl II: estimation of cardiac ventricular volume from MRI videos and deep recurrent neural networks.
+    \item National Data Science Bowl: image classification of plankton via model averaging of several deep convolutional neural networks.  These networks used 
+hierarchical labels, 
+online image augmentation, and conventional visual feature extraction.
+    \item American Epilepsy Society Seizure Prediction Challenge: classification of pre-seizure iEEGs from normal brain activity using an ensemble of random forest models trained on a range of signal analysis features.
+\end{itemize}}
+
+\cventry{July--October 2013}{Exposing Microbes in the Stratosphere Project} {NASA Researcher}{John F. Kennedy Space Center}{}{Supervisor: David J. Smith\\Performed ground-based trials for investigating the transcriptomic response to high UV-C flux exposure in \textit{Bacillus}. Assisted with the design and construction of an atmospheric microbe exposure and sampling apparatus for high-altitude weather balloons.}
+
+\cventry{October 2013}{Cloud Lab Documentary}{BBC Scientific Consultant}{John F. Kennedy Space Center}{}{Acted as NASA representative and scientific advisor for the British Broadcasting Company documentary on atmospheric sciences. Developed microbial sampling and exposure protocols and briefed the cast and producers on the relevant microbiological background.}
+
+\cventry{June--August 2010}{SGM Harry Smith Studentship}{Undergraduate Researcher}{University of Exeter}{}{Funded summer honours research project (9 weeks) on the evolution of folate biosynthesis gene fusions within the eukaryotes.} 
+
+\subsection{Teaching Experience}
+
+\cventry{March 2018}{Guest Lecturer on Phylogenetic Statistics}{Bioinformatics Algorithms (CSCI6802)}{Dalhousie University}{}{}
+
+\cventry{February 2018}{Guest Lecturer on Statistical Data Formats}{Data Management (INFO6540)}{Dalhousie University}{}{}
+
+\cventry{January 2018--Present}{GED Tutor}{Adult Literacy Network}{North Memorial Library}{}{}
+
+\cventry{November 2017}{Assistant Bioinformatics Tutor}{International Course on Antibiotics and Resistance}{Annecy, France}{}{}
+
+\cventry{January--March 2016}{Assistant Instructor}{Introduction to Python and Advanced Python}{University of Exeter}{}{}
+
+\cventry{June 2016}{Lecturer}{Machine Learning for the Life Sciences}{University of Exeter}{}{}
+
+\cventry{February 2015}{Assistant Instructor}{Bioinformatics for Genomics}{University of Exeter}{}{}
+
+\cventry{October 2014}{Assistant Instructor}{Unix and Perl}{University of Exeter}{}{}
+
+\cventry{September 2014}{Assistant Instructor}{Image Processing with Python}{University of Exeter}{}{}
+
+\cventry{November 2013}{Teaching Assistant}{Software Carpentry Bootcamp}{University of Exeter}{}{}
+
+\subsection{Supervision Experience}
+
+\cventry{October 2018--Present}{Department of Biology}{Undergraduate Honours Supervisor}{Dalhousie University}{}{Supervision of an undergraduate honours student analysing patterns of AMR in a large set of metagenome assembled genomes.}
+
+\cventry{July--August 2018}{Faculty of Computer Science}{NSERC Summer Research Supervisor}{Dalhousie University}{}{Supervision of an NSERC Undergraduate Research Assistant in developing machine learning models for predicting rRNA gene related AMR resistance.}
+
+\cventry{June--September 2018}{Team Coordinator}{Machine Learning Consultancy}{Dalhousie University}{}{Supervised 2 PhD students on an industry partnership consultancy applying machine learning to time-sheet programs.}
+
+\cventry{July--November 2017}{Team Coordinator}{Bioinformatics Consultancy}{Dalhousie University}{}{Supervised 2 PhD students performing microbial genomic analyses for a clinical microbiome project.}
+
+\cventry{January--March 2016}{High School}{Nuffield Foundation Supervisor}{University of Exeter}{}{Co-supervision of a high school student from a deprived area doing research on the evolution of endosymbiotic algae.}
+
+\cventry{November--December 2014}{Biosciences}{Undergraduate Honours Supervisor}{University of Exeter}{}{
+Supervision of an honours project performing phylogenetic analysis of the components of the RNAi system of \textit{Paramecium}.}
+
+\cventry{June--October 2013}{Microbiology}{Undergraduate Honours Supervisor}{Natural History Museum}{}{
+Supervision of a visiting research student registered at the University of Oxford involving the bioinformatic analysis of horizontal gene transfers of arsenate resistance.}
+
+\subsection{Professional Experience}
+
+%\cventry{October 2018--Present}{Postdoctoral Union}{Collective Bargaining Team}{Dalhousie University}{}{Representing the postdoctoral union in negotiation over a new collective bargaining agreement with the university.}
+
+\cventry{February 2014--Present}{Pre-Publication Peer Review}{Reviewer}{Current Biology}{}{
+Performed reviews for: Current Biology, BMC Genomics, PLoS Computational Biology, GigaScience, Communications Biology, MSystems, and, Bioinformatics}
+
+\section{Publications}
+
+\subsection{Published}
+% highlight name in publications
+\begin{itemize}
+\item Leonard, G., Labarre, A., Milner, D. S., Monier, A., Soanes, D., Wideman, J. G., \textbf{Maguire, F.}, Stevens,S., Sain, D., Grau-Bové, X., et al. Comparative genomic analysis of the ‘pseudofungus’ hyphochytrium catenoides. \textit{Open biology} 8, 1 (2018), 170-184
+    \item Richards, T. A., Leonard, G., Mahé, F., del Campo, J., Romac, S., Jones, M. D., \textbf{Maguire, F.}, Dunthorn,M., De Vargas, C., Massana, R., et al. Molecular diversity and distribution of marine fungi across 130 european environmental samples. \textit{Proc. R. Soc. B} 282, 1819 (2015), 20152243
+    \item Chambouvet, A., Gower, D. J., Jirk, M., Yabsley, M. J., Davis, A. K., Leonard, G., \textbf{Maguire, F.}, Doherty-Bone, T. M., Bittencourt-Silva, G. B., Wilkinson, M., et al. Cryptic infection of a broad taxonomic and geographic diversity of tadpoles by perkinsea protists. \textit{Proceedings of the National Academy of Sciences} 112, 34 (2015), E4743–E4751
+    \item Smith, D. J., Thakrar, P. J., Bharrat, A. E., Dokos, A. G., Kinney, T. L., James, L. M., Lane, M. A.,Khodadad, C. L., \textbf{Maguire, F.}, Maloney, P. R., et al. A balloon-based payload for exposing microorganisms in the stratosphere (e-mist). \textit{Gravitational and Space Research} 2, 2 (2014)
+    \item \textbf{Maguire, F.}, Henriquez, F. L., Leonard, G., Dacks, J. B., Brown, M. W., and Richards, T. A. Complex patterns of gene fission in the eukaryotic folate biosynthesis pathway. \textit{Genome Biology and Evolution} 6, 10 (2014), 2709–2720
+    \item \textbf{Maguire, F.}, and Richards, T. A. Organelle evolution: A mosaic of `mitochondrial' functions. \textit{Current Biology} 24, 11 (2014), R518–R520
+    \item Chambouvet, A., Berney, C., Romac, S., Audic, S., \textbf{Maguire, F.}, De Vargas, C., and Richards, T. A. Diverse molecular signatures for ribosomally `active' perkinsea in marine sediments. \textit{BMC Microbiology} 14, 1 (2014), 110
+\end{itemize}
+
+\subsection{Submitted}
+\begin{itemize}
+      \item Wideman, J.G., Monier, A., Rodriguez-Martinex, R., Leonard, G., Cook, E., Poirier, C., \textbf{Maguire, F.}, Milner, D., Moore, K., Santoro, A.E., Keeling, P.J., Worden A.Z., Richards, T.A. Targeted single-cell sequencing of heterotrophic flagellates identifies novel mitochondrial genome diversity.
+      \item Chambouvet, A., Monier, A., del Campo, J., \textbf{Maguire, F.}, Itoiz, S., Edvarsen, B., Ekreim, W., Richards, T.A. Cryptic intracellular infection of
+ecologically important diatom species by a distinct Opisthosporidia (Holomycota) lineage
+\end{itemize}
+
+\subsection{Manuscripts in Preparation}
+
+\begin{itemize}
+        \item \textbf{Maguire, F.}, Attiq, M., Moussa, D.S., Beiko, R.G.
+        Predicting the phenotypic antimicrobial resistance from genomic determinants using machine learning in 
+Broiler Chicken derived Salmonella.
+    \item Tsang, K., Alcock, B., \textbf{Maguire, F.}, McArthur A. Machine learning provides vital clues for linking AMR genotypes to phenotypes in ESKAPE pathogens.
+       \item \textbf{Maguire, F.}, Alcock, B., McArthur A., Brinkman, F., Beiko, R.G. AMRtime: Rapid accurate prediction of AMR determinants from metagenomic data. 
+ \item \textbf{Maguire, F.}, Alcock, B., McArthur A., Brinkman, F., Beiko, R.G. 
+     Systematic failures in standard AMR PCR primers to detect divergent AMR alleles. 
+    \item Hall, M.W., \textbf{Maguire, F.}, Beiko, R.G. Bridging the gulf: ANI discontinuities as the product of systemic biases
+    \item \textbf{Maguire, F.}, Attiq, M., Moussa, D.S., Beiko, R.G. Large scale genomic analysis of chicken derived non-typhoidal Salmonella.
+    \item \textbf{Maguire, F.}, Alcock, B., McArthur A., Brinkman, F., Beiko, R.G. Comparative analysis of metagenomic search methods for AMR. 
+\end{itemize}
+
+\section{Conferences}
+
+\subsection{Oral Presentations}
+
+
+\cventry{19 October 2018}{Remote presentation}{Joint Departmental Seminar}{Universities of Auckland and Waterloo}{}{AMRtime: Rapid Accurate Identification of
+Antimicrobial Resistance Determinants from Metagenomic Data}
+
+\cventry{23--26 September 2018}{Rapid Applied Microbial NGS and Bioinformatic Pipelines Conference}{American Society of Microbiology}{Washington, DC}{}{AMRtime: Rapid Accurate Identification of
+Antimicrobial Resistance Determinants from Metagenomic Data}
+
+\cventry{22 June 2018}{Annual General Meeting}{Integrated Rapid Infectious Disease Analysis}{National Microbiology Labs, Winnipeg}{}{Using Machine Learning Methods to Accurately Classify AMR in Metagenomic Data}
+
+\cventry{24--26 January 2018}{Departmental Conference}{Dalhousie Computer Science In-House Conference}{Dalhousie University}{}{BayeHem: Bayesian Optimisation of Genome Assembly}
+
+\cventry{11--19 November 2017}{Workshop}{International Course on Antibiotics and Resistance}{Annecy, France}{}{Understand and Using the Comprehensive Antibiotic Resistance Database}
+
+\cventry{1--5 June 2016}{Integrated Microbiology Meeting}{Canadian Institute For Advanced Research}{Toronto, ON}{}{An Analysis of RNAi Pathway Components and Function in \textit{Paramecium}}
+
+\cventry{2nd June 2015}{Workshop}{Machine Learning for Life Sciences}{University of Exeter}{}{Casting a Deep Net: Classifying Plankton from Shadowgraph Images}
+
+\cventry{1st June 2015}{Workshop}{Machine Learning for Life Sciences}{University of Exeter}{}{Stumbling Over the Decision Boundary}
+
+\cventry{2--7 December 2013}{Young Investigators Program}{European Molecular Biology Organisation}{EMBO Heidelberg}{}{Endosymbiont Proteins Implicated in the Maintenance of the Photosynthetic Endosymbiosis between \textit{Paramecium bursaria} and \textit{Chlorella}}
+
+
+
+\cventry{25--28th March 2012}{Presented in Absentia}{National Association for Research in Science Teaching}{Indianapolis, IN}{}{Working on the Public's Perception and Understand of Science and Scientists through a Popular, Open-Access `AskScience' Website}
+
+
+\cventry{2--3rd February 2012}{Presented in Absentia}{Tennessee Maths and Science Education Research Conference}{Murfreesboro, TN}{}{Online Conversations as a Way of Understanding the Public's Views of the Natural of Science: Research on Reddit's `AskScience'}
+
+
+\subsection{Poster Presentations}
+
+\cventry{8--10 March 2019}{Translation and Implementation for Impact in Global Health Conference}{Consortium of Universities for Global Health}{Chicago, IL}{}{Halifax Newcomer Well Woman Clinic: Promoting the Health of Refugee Women Through Advocacy and Partnership}
+
+
+\cventry{18--21 June 2018}{Summer Conference}{Canadian Society of Microbiology}{University of Manitoba}{}{The Cost of Speed: Evaluating Systematic Failures in Metagenomic AMR Profiling}
+
+\cventry{26 March 2015}{Departmental Conference}{School of Informatics Jamboree}{University of Edinburgh}{}{Classifying Plankton Species with Deep Learning and Computer Vision}
+
+\cventry{2--7th December 2013}{Young Investigators Program}{European Molecular Biology Organisation}{EMBO Heidelberg}{}{Key Principles in Molecular Phylogenetics}
+
+\cventry{19--24th October 2013}{Comparative Genomics of Eukaryotic Microorgamisms Conference}{European Molecular Biology Organisation}{Sant Feliu de Guixols, Spain}{}{Endosymbiont Proteins Implicated in the Maintenance of the Photosynthetic Endosymbiosis between \textit{Paramecium bursaria} and \textit{Chlorella}}
+
+\cventry{1st December 2011}{Young Systematists Forum}{Systematics Association}{Natural History Museum, London}{}{Folate Biosynthesis Gene Fusion Evolution in the Eukaryotes}
+
+
+\cventry{5--7th September 2011}{Summer Conference}{Society for General Microbiology}{University of York}{}{Evolution of Folate Biosynthesis Gene Fusion in the Eukaryotes}
+
+\cventry{15--20th October 2011}{Comparative Genomics of Eukaryotic Microorgamisms Conference}{European Molecular Biology Organisation}{Sant Feliu de Guixols, Spain}{}{Evolution of Folate Biosynthesis Gene Fusions in the Eukaryotes}
+
+\section{Academic Associations}
+\begin{itemize}
+    \item American Society of Microbiology
+    \item Canadian Society of Microbiology
+    \item Dalhousie Postdoctoral Union
+    \item International Society of Infectious Disease
+    \item British Phycological Society
+    \item Universities and Colleges Union
+\end{itemize}
+
+% \section{Technical Skills}
+% \begin{itemize}
+%     \item Expert in UNIX/Linux, Zsh/Bash, Python, Git, \LaTeX
+%     \item Familiar with R, awk, C, C++, perl, matlab
+%     \item Several open source contributions to bioinformatics projects in python and C++
+%     \item Extensive domain specific knowledge in bioinformatics: transcriptomics, molecular evolution/phylogenetics, genomics, metabolomics, sequence analysis, annotation
+
+% \end{itemize}
+% TECHNICAL SKILLS
+% • Expert with UNIX/Linux, Zsh/Bash, Python, Awk, Git, L A TEX
+% • Familiar with 
+% Administration
+% • Basic knowledge of Javascript (including D3.js), CSS, Nim, Verilog, Prolog, Go
+% • 
+% • Familiarity with an array of basic molecular and microbiological techniques and methodologies: PCR,
+% culturing, cloning, sequencing technologies, microscopy.
+% \section{Additional Skills}
+% \begin{itemize}
+%     \item 
+% \end{itemize}
+
+\section{References}
+
+\begin{itemize}
+    \item Robert G. Beiko, Canada Research Chair in Bioinformatics, Faculty of Computer Science, Dalhousie University (Postdoctoral supervisor), E-mail: beiko@cs.dal.ca
+    \item Andrew McArthur, Cisco Research Chair in Bioinformatics, Department of Biochemistry and Biomedical Sciences, McMaster University (Collaborator), E-mail: mcarthua@mcmaster.ca
+    \item Thomas A. Richards, Chair of Evolutionary Genomics, Living Systems Institute, University of Exeter (PhD supervisor), E-mail: T.A.Richards@exeter.ac.uk
+\end{itemize}
+% 
+
+
+% \item{Up to 4 references available on request}
+
+% \end{itemize}
+
+% % Publications from a BibTeX file without multibib
+% %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+% %  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% % Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\bibliographystyle{plain}
+%\nobibliography{publications}                   % 'publications' is the name of a BibTeX file
+% %\nocitemisc{misc1,misc2,misc3}
+% %\bibliographystylemisc{plain}
+% %\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+% %-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
